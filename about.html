@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>درباره ما | فورزا تک - تجهیزات دیجیتال هوشمند</title>
+  <meta name="description" content="آشنایی با داستان فورزا تک، استانداردهای تضمین اصالت کالا، تست سلامت فیزیکی گجت‌ها و تیم پشتیبانی مستقیم." />
+  <meta property="og:title" content="درباره ما | فورزا تک" />
+  <meta property="og:description" content="پیشرو در عرضه گجت‌های هوشمند و اکسسوری مدرن دیجیتال با تمرکز بر اصالت و مینیمالیسم." />
+  <meta property="og:type" content="website" />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN for 0-build and Instant GitHub Pages Deployment -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-canvas": "#FFFFFF",
+            "surface-subtle": "#FBFBFD",
+            "surface-secondary": "#F5F5F7",
+            "surface-container": "#EEEEF2",
+            "text-primary": "#1D1D1F",
+            "text-secondary": "#6E6E73",
+            "primary": "#0071E3",
+            "primary-hover": "#0077ED",
+            "primary-dark": "#0059B5",
+            "primary-container": "#0071E3",
+            "accent-link-hover": "#0077ED",
+            "on-primary": "#FFFFFF",
+            "border-hairline": "rgba(0, 0, 0, 0.08)",
+            "border-hairline-subtle": "rgba(0, 0, 0, 0.04)"
+          },
+          fontFamily: {
+            sans: ['Vazirmatn', 'Tahoma', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body class="bg-surface-canvas font-sans text-text-primary antialiased selection:bg-primary/10 selection:text-primary">
+
+  <!-- HEADER & TOP NAVIGATION -->
+  <header class="sticky top-0 z-50 w-full glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <!-- Right: Logo & Brand Name -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a class="flex items-center gap-3 group" href="index.html">
+          <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-dark to-primary flex items-center justify-center text-white shadow-md transition-transform duration-300 group-hover:scale-105">
+            <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </span>
+          <div class="flex flex-col text-right">
+            <span class="font-black text-lg text-text-primary tracking-tight leading-tight">فورزا تک</span>
+            <span class="text-[11px] text-text-secondary leading-none">تجهیزات دیجیتال هوشمند</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center: Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="index.html">صفحه اصلی</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="products.html">کاتالوگ محصولات</a>
+        <a class="text-sm font-bold text-primary nav-link-active pb-1" href="about.html">درباره ما</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="contact.html">تماس با ما</a>
+      </nav>
+
+      <!-- Left: Actions (Search + Order Telegram CTA + Mobile Menu Button) -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <button data-open-search aria-label="جستجو در محصولات" class="w-9 h-9 rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:bg-surface-secondary transition-colors" type="button">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary hover:bg-primary-hover text-white text-xs sm:text-sm font-medium transition-all shadow-sm hover:shadow active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+          <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+          <span>ثبت سفارش</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" aria-label="منوی اصلی" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center text-text-secondary hover:bg-surface-secondary">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="mobile-menu-drawer" class="fixed top-0 right-0 bottom-0 w-72 bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div>
+      <div class="flex items-center justify-between mb-8 pb-4 border-b border-border-hairline">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold">F</span>
+          <span class="font-bold text-gray-900">منوی فورزا تک</span>
+        </div>
+        <button id="mobile-menu-close" aria-label="بستن منو" class="w-8 h-8 rounded-full flex items-center justify-center text-gray-500 hover:bg-gray-100">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-sm font-medium">
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="index.html">صفحه اصلی</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="products.html">کاتالوگ محصولات</a>
+        <a class="text-primary font-bold px-3 py-2 rounded-xl bg-blue-50/70" href="about.html">درباره ما</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="contact.html">تماس با ما</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-border-hairline">
+      <a class="w-full py-3 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm" href="https://t.me/MuzanAkuma" target="_blank" rel="noopener noreferrer">
+        <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+        <span>ارتباط با پشتیبان تلگرام</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="w-full">
+    <!-- HERO -->
+    <section class="w-full bg-gradient-to-b from-surface-secondary via-surface-subtle to-surface-canvas py-16 sm:py-20 border-b border-border-hairline">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4 border border-primary/20">
+          داستان و فلسفه برند
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-black text-text-primary mb-5 tracking-tight leading-snug">
+          پیشرو در عرضه گجت‌های هوشمند و مینیمال
+        </h1>
+        <p class="text-base sm:text-lg text-text-secondary leading-relaxed max-w-2xl mx-auto">
+          باور ما ساده است: فناوری باکیفیت نباید پیچیده یا مبهم باشد. ما در فورزا تک گلچینی از خوش‌ساخت‌ترین و کاربردی‌ترین ابزارهای دیجیتال روز دنیا را با ضمانت سلامت و دسترسی بدون واسطه در اختیار شما قرار می‌دهیم.
+        </p>
+      </div>
+    </section>
+
+    <!-- KEY MILESTONES / STATS -->
+    <section class="w-full bg-surface-canvas py-12 border-b border-border-hairline">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="p-6 rounded-2xl bg-surface-secondary/60 border border-border-hairline">
+            <span class="text-3xl sm:text-4xl font-black text-primary block mb-1">+۱۰,۰۰۰</span>
+            <span class="text-xs sm:text-sm text-text-secondary font-medium">سفارش موفق ارسالی</span>
+          </div>
+          <div class="p-6 rounded-2xl bg-surface-secondary/60 border border-border-hairline">
+            <span class="text-3xl sm:text-4xl font-black text-primary block mb-1">۹۹.۴٪</span>
+            <span class="text-xs sm:text-sm text-text-secondary font-medium">رضایت‌مندی خریداران</span>
+          </div>
+          <div class="p-6 rounded-2xl bg-surface-secondary/60 border border-border-hairline">
+            <span class="text-3xl sm:text-4xl font-black text-primary block mb-1">۴۸ ساعت</span>
+            <span class="text-xs sm:text-sm text-text-secondary font-medium">مهلت تست فیزیکی</span>
+          </div>
+          <div class="p-6 rounded-2xl bg-surface-secondary/60 border border-border-hairline">
+            <span class="text-3xl sm:text-4xl font-black text-primary block mb-1">۱۰۰٪</span>
+            <span class="text-xs sm:text-sm text-text-secondary font-medium">پوشش سراسر ایران</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES (4 PILLARS) -->
+    <section class="w-full bg-surface-subtle py-20 border-b border-border-hairline">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs sm:text-sm font-bold text-primary tracking-wider uppercase block mb-2">اصول کاری ما</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-text-primary mb-3">چرا کاربران به فورزا تک اعتماد می‌کنند؟</h2>
+          <p class="text-sm sm:text-base text-text-secondary">استانداردهایی که در تمام مراحل انتخاب محصول تا تحویل درب منزل رعایت می‌کنیم.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Pillar 1 -->
+          <div class="bg-white rounded-3xl p-8 border border-border-hairline hover-lift">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 text-primary flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-text-primary mb-2">اصالت و بازدهی تضمین‌شده</h3>
+            <p class="text-sm text-text-secondary leading-relaxed">
+              ما هیچ کالای بی‌کیفیت یا کپی بدون استانداردی را در فروشگاه قرار نمی‌دهیم. هر مدل با بررسی دقیق بازخورد کاربران جهانی و تست مدارهای الکترونیکی گزینش شده است.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="bg-white rounded-3xl p-8 border border-border-hairline hover-lift">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 text-primary flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" x2="12" y1="8" y2="12"></line>
+                <line x1="12" x2="12.01" y1="16" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-text-primary mb-2">تست فیزیکی قبل از بسته‌بندی</h3>
+            <p class="text-sm text-text-secondary leading-relaxed">
+              کارشناسان فنی ما قبل از تحویل کالا به پست، سلامت درگاه‌ها، اتصالات بلوتوث و ثبات ولتاژ را بازبینی می‌کنند تا کالا با خیالی کاملا آسوده به دست شما برسد.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="bg-white rounded-3xl p-8 border border-border-hairline hover-lift">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 text-primary flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-text-primary mb-2">پشتیبانی زنده و بدون واسطه در تلگرام</h3>
+            <p class="text-sm text-text-secondary leading-relaxed">
+              شما با یک انسان واقعی و متخصص صحبت می‌کنید، نه ربات‌های بی‌پاسخ. در تلگرام می‌توانید قبل از خرید تصاویر دقیق درخواست کنید یا سوالات تخصصی سازگاری با دیوایس خود را بپرسید.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="bg-white rounded-3xl p-8 border border-border-hairline hover-lift">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 text-primary flex items-center justify-center mb-5">
+              <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-text-primary mb-2">طراحی مینیمال و ماندگار</h3>
+            <p class="text-sm text-text-secondary leading-relaxed">
+              ما به زیبایی میز کار و هارمونی وسایل شما اهمیت می‌دهیم. تمامی رنگ‌بندی‌ها، متریال‌های آلومینیومی و طراحی‌های بدنه طبق استانداردهای زیباشناسی مدرن انتخاب شده‌اند.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY CHECK WORKFLOW -->
+    <section class="w-full bg-surface-canvas py-20 border-b border-border-hairline">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs sm:text-sm font-bold text-primary tracking-wider uppercase block mb-2">روند ارسال کالا</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-text-primary mb-3">سفارش شما چگونه آماده می‌شود؟</h2>
+          <p class="text-sm text-text-secondary">از لحظه ثبت پیام شما در تلگرام تا تحویل به مامور پست</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 rounded-2xl bg-surface-secondary/50 border border-border-hairline relative">
+            <span class="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center mb-4">۱</span>
+            <h4 class="font-bold text-base text-text-primary mb-2">استعلام و ثبت قطعی</h4>
+            <p class="text-xs text-text-secondary leading-relaxed">بررسی موجودی در انبار و تایید رنگ‌بندی و مدل انتخابی در تلگرام</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-surface-secondary/50 border border-border-hairline relative">
+            <span class="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center mb-4">۲</span>
+            <h4 class="font-bold text-base text-text-primary mb-2">تست سلامت فنی</h4>
+            <p class="text-xs text-text-secondary leading-relaxed">چکاپ باتری، درگاه‌های شارژ و عدم وجود خط و خش فیزیکی</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-surface-secondary/50 border border-border-hairline relative">
+            <span class="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center mb-4">۳</span>
+            <h4 class="font-bold text-base text-text-primary mb-2">بسته‌بندی ضربه‌گیر</h4>
+            <p class="text-xs text-text-secondary leading-relaxed">قرارگیری در حباب‌گیر‌های چند لایه و کارتن مقاوم پستی</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-surface-secondary/50 border border-border-hairline relative">
+            <span class="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center mb-4">۴</span>
+            <h4 class="font-bold text-base text-text-primary mb-2">ارسال کد رهگیری</h4>
+            <p class="text-xs text-text-secondary leading-relaxed">تحویل سریع به پست پیشتاز و ارسال بارکد آنلاین جهت رهگیری لحظه‌ای</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="w-full bg-surface-secondary py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-2xl sm:text-3xl font-black text-text-primary mb-4">می‌خواهید محصولات ما را بررسی کنید؟</h2>
+        <p class="text-sm sm:text-base text-text-secondary max-w-xl mx-auto mb-8 leading-relaxed">
+          همین حالا می‌توانید کاتالوگ مدل‌های منتخب را مشاهده کنید و یا در تلگرام با ما به گفتگو بنشینید.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a class="px-7 py-3 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-semibold shadow-sm transition-all flex items-center gap-2 active:scale-95" href="products.html">
+            <span>مشاهده کاتالوگ محصولات</span>
+            <svg class="w-4 h-4 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a class="px-7 py-3 rounded-full bg-white hover:bg-gray-50 text-text-primary text-sm font-semibold border border-border-hairline transition-all flex items-center gap-2" href="contact.html">
+            <span>راه‌های ارتباط و تماس</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-secondary border-t border-border-hairline">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Col 1 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect>
+              <line x1="8" x2="16" y1="21" y2="21"></line>
+              <line x1="12" x2="12" y1="17" y2="21"></line>
+            </svg>
+            <span>محصولات فورزا تک</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-text-secondary">
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=headphones">هدفون و هندزفری بلوتوثی</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=chargers">شارژرهای نسل پنجم GaN</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=smartwatches">ساعت و مچ‌بندهای هوشمند</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=powerbanks">پاوربانک‌های سفری فست شارژ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <span>دسترسی سریع</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-text-secondary">
+            <li><a class="hover:text-primary transition-colors" href="index.html">صفحه اصلی</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html">کاتالوگ کامل محصولات</a></li>
+            <li><a class="hover:text-primary transition-colors font-bold text-primary" href="about.html">درباره فورزا تک</a></li>
+            <li><a class="hover:text-primary transition-colors" href="contact.html">ارتباط و تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>پشتیبانی و تلگرام</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-text-secondary mb-3 leading-relaxed">
+            مشاوره خرید، پیگیری سفارشات و استعلام موجودی لحظه‌ای:
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent-link-hover text-xs sm:text-sm" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+            </svg>
+            <span>ارتباط با پشتیبان @MuzanAkuma</span>
+          </a>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>درباره برند</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">
+            فورزا تک ارائه‌دهنده گجت‌های هوشمند مینیمال و کالاهای اورجینال دیجیتال است تا تجربه استفاده از فناوری را با بالاترین کیفیت در دسترس شما قرار دهد.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-border-hairline flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-secondary">
+        <p class="text-center sm:text-right">
+          تمامی حقوق محفوظ است © فورزا تک ۱۴۰۳ - طراحی و استانداردسازی برای وب فارسی
+        </p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-text-primary transition-colors" href="about.html">حریم خصوصی</a>
+          <span>•</span>
+          <a class="hover:text-text-primary transition-colors" href="about.html">شرایط خدمات</a>
+          <span>•</span>
+          <a class="hover:text-primary transition-colors" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">پشتیبانی تلگرام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="fixed inset-0 z-50 hidden flex items-start justify-center pt-20 px-4">
+    <div id="search-modal-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity"></div>
+    <div class="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 z-10 animate-subtle-pulse">
+      <div class="p-4 border-b border-gray-100 flex items-center gap-3">
+        <svg class="w-5 h-5 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+        </svg>
+        <input id="search-modal-input" type="text" placeholder="نام محصول، برند یا دسته‌بندی را جستجو کنید..." class="w-full bg-transparent border-0 focus:ring-0 text-sm text-gray-900 placeholder:text-gray-400 outline-none" />
+        <button id="close-search-modal" class="text-xs text-gray-400 hover:text-gray-600 px-2 py-1 rounded bg-gray-100">بستن (ESC)</button>
+      </div>
+      <div id="search-results-container" class="max-h-96 overflow-y-auto p-2"></div>
+    </div>
+  </div>
+
+  <!-- Shared Scripts -->
+  <script src="assets/main.js"></script>
+</body>
+</html>

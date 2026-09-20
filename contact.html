@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>تماس با ما | فورزا تک - پشتیبانی و سفارش</title>
+  <meta name="description" content="راه‌های ارتباطی و تماس با فورزا تک: پشتیبانی آنلاین تلگرام، مشاوره خرید گجت‌های هوشمند، فرم ارتباطی و پیگیری سفارشات." />
+  <meta property="og:title" content="تماس با ما | فورزا تک" />
+  <meta property="og:description" content="پاسخگویی سریع و مستقیم در تلگرام و تلفن پشتیبانی برای راهنمایی خرید و پیگیری سفارشات." />
+  <meta property="og:type" content="website" />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN for 0-build and Instant GitHub Pages Deployment -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-canvas": "#FFFFFF",
+            "surface-subtle": "#FBFBFD",
+            "surface-secondary": "#F5F5F7",
+            "surface-container": "#EEEEF2",
+            "text-primary": "#1D1D1F",
+            "text-secondary": "#6E6E73",
+            "primary": "#0071E3",
+            "primary-hover": "#0077ED",
+            "primary-dark": "#0059B5",
+            "primary-container": "#0071E3",
+            "accent-link-hover": "#0077ED",
+            "on-primary": "#FFFFFF",
+            "border-hairline": "rgba(0, 0, 0, 0.08)",
+            "border-hairline-subtle": "rgba(0, 0, 0, 0.04)"
+          },
+          fontFamily: {
+            sans: ['Vazirmatn', 'Tahoma', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body class="bg-surface-canvas font-sans text-text-primary antialiased selection:bg-primary/10 selection:text-primary">
+
+  <!-- HEADER & TOP NAVIGATION -->
+  <header class="sticky top-0 z-50 w-full glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <!-- Right: Logo & Brand Name -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a class="flex items-center gap-3 group" href="index.html">
+          <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-dark to-primary flex items-center justify-center text-white shadow-md transition-transform duration-300 group-hover:scale-105">
+            <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </span>
+          <div class="flex flex-col text-right">
+            <span class="font-black text-lg text-text-primary tracking-tight leading-tight">فورزا تک</span>
+            <span class="text-[11px] text-text-secondary leading-none">تجهیزات دیجیتال هوشمند</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center: Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="index.html">صفحه اصلی</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="products.html">کاتالوگ محصولات</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="about.html">درباره ما</a>
+        <a class="text-sm font-bold text-primary nav-link-active pb-1" href="contact.html">تماس با ما</a>
+      </nav>
+
+      <!-- Left: Actions (Search + Order Telegram CTA + Mobile Menu Button) -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <button data-open-search aria-label="جستجو در محصولات" class="w-9 h-9 rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:bg-surface-secondary transition-colors" type="button">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary hover:bg-primary-hover text-white text-xs sm:text-sm font-medium transition-all shadow-sm hover:shadow active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+          <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+          <span>ثبت سفارش</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" aria-label="منوی اصلی" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center text-text-secondary hover:bg-surface-secondary">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="mobile-menu-drawer" class="fixed top-0 right-0 bottom-0 w-72 bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div>
+      <div class="flex items-center justify-between mb-8 pb-4 border-b border-border-hairline">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold">F</span>
+          <span class="font-bold text-gray-900">منوی فورزا تک</span>
+        </div>
+        <button id="mobile-menu-close" aria-label="بستن منو" class="w-8 h-8 rounded-full flex items-center justify-center text-gray-500 hover:bg-gray-100">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-sm font-medium">
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="index.html">صفحه اصلی</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="products.html">کاتالوگ محصولات</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="about.html">درباره ما</a>
+        <a class="text-primary font-bold px-3 py-2 rounded-xl bg-blue-50/70" href="contact.html">تماس با ما</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-border-hairline">
+      <a class="w-full py-3 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm" href="https://t.me/MuzanAkuma" target="_blank" rel="noopener noreferrer">
+        <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+        <span>ارتباط با پشتیبان تلگرام</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="w-full">
+    <!-- HERO -->
+    <section class="w-full bg-gradient-to-b from-surface-secondary via-surface-subtle to-surface-canvas py-16 sm:py-20 border-b border-border-hairline">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4 border border-primary/20">
+          راه‌های ارتباط و پشتیبانی
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-black text-text-primary mb-4 tracking-tight leading-snug">
+          همواره پاسخگوی شما هستیم
+        </h1>
+        <p class="text-base sm:text-lg text-text-secondary leading-relaxed max-w-2xl mx-auto">
+          برای استعلام کالا، مشاوره فنی قبل از خرید، یا پیگیری سفارش ثبت‌شده، می‌توانید از طریق تلگرام، تماس تلفنی یا فرم زیر با ما در ارتباط باشید.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT CHANNELS (4 CARDS) -->
+    <section class="w-full py-16 bg-surface-canvas border-b border-border-hairline">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1: Telegram Support -->
+          <div class="p-6 rounded-3xl bg-surface-subtle border border-border-hairline flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-blue-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-6 h-6 fill-current rotate-45" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-text-primary mb-1">پشتیبان اختصاصی تلگرام</h3>
+              <p class="text-xs text-text-secondary mb-4 leading-relaxed">پاسخگویی زنده، ارسال تصویر حقیقی کالا و ثبت آنی سفارش</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-primary block mb-3 dir-ltr text-right">@MuzanAkuma</span>
+              <a href="https://t.me/MuzanAkuma" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>شروع گفتگو در تلگرام</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Telegram Bot -->
+          <div class="p-6 rounded-3xl bg-surface-subtle border border-border-hairline flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                  <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                  <circle cx="12" cy="5" r="2"></circle>
+                  <path d="M12 7v4"></path>
+                  <line x1="8" y1="16" x2="8" y2="16"></line>
+                  <line x1="16" y1="16" x2="16" y2="16"></line>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-text-primary mb-1">ربات کاتالوگ و ثبت سفارش</h3>
+              <p class="text-xs text-text-secondary mb-4 leading-relaxed">استعلام خودکار موجودی انبار و مشاهده قیمت‌های روز محصولات</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-sky-600 block mb-3 dir-ltr text-right">@MuzanAkuma</span>
+              <a href="https://t.me/MuzanAkuma" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-full bg-sky-500 hover:bg-sky-600 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>باز کردن ربات</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Phone -->
+          <div class="p-6 rounded-3xl bg-surface-subtle border border-border-hairline flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-text-primary mb-1">تماس و مشاوره تلفنی</h3>
+              <p class="text-xs text-text-secondary mb-4 leading-relaxed">روزهای شنبه تا پنجشنبه از ساعت ۱۰:۰۰ صبح الی ۲۱:۰۰</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-emerald-700 block mb-3 dir-ltr text-right">۰۲۱-۸۸۹۹۰۰۱۱</span>
+              <a href="tel:02188990011" class="w-full py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>برقراری تماس</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Email -->
+          <div class="p-6 rounded-3xl bg-surface-subtle border border-border-hairline flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-purple-500 text-white flex items-center justify-center mb-4 shadow-sm">
+                <svg class="w-6 h-6 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg text-text-primary mb-1">مکاتبات و ایمیل</h3>
+              <p class="text-xs text-text-secondary mb-4 leading-relaxed">پیگیری همکاری سازمانی، استعلام تعداد بالا و پیشنهادات</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-purple-700 block mb-3 dir-ltr text-right">info@forzatech.ir</span>
+              <a href="mailto:info@forzatech.ir" class="w-full py-2.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+                <span>ارسال ایمیل</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CONTACT FORM & INFO ROW -->
+    <section class="w-full py-20 bg-surface-secondary/40 border-b border-border-hairline">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Contact Form (7 cols) -->
+          <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-border-hairline shadow-sm">
+            <h2 class="text-2xl font-bold text-text-primary mb-2">ارسال پیام یا استعلام</h2>
+            <p class="text-xs sm:text-sm text-text-secondary mb-6">فرم زیر را تکمیل کنید؛ می‌توانید آن را مستقیماً در تلگرام نیز برای کارشناس ما ارسال فرمایید.</p>
+
+            <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+              <div>
+                <label for="form-name" class="block text-xs font-semibold text-text-primary mb-1.5">نام و نام خانوادگی</label>
+                <input id="form-name" required type="text" placeholder="مثال: علی رضایی" class="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-border-hairline text-sm text-text-primary focus:bg-white focus:outline-none focus:border-primary transition-colors" />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-contact" class="block text-xs font-semibold text-text-primary mb-1.5">شماره تماس یا آیدی تلگرام</label>
+                  <input id="form-contact" required type="text" placeholder="۰۹۱۲... یا @username" class="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-border-hairline text-sm text-text-primary focus:bg-white focus:outline-none focus:border-primary transition-colors" />
+                </div>
+                <div>
+                  <label for="form-subject" class="block text-xs font-semibold text-text-primary mb-1.5">موضوع پیام</label>
+                  <select id="form-subject" class="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-border-hairline text-sm text-text-primary focus:bg-white focus:outline-none focus:border-primary transition-colors">
+                    <option value="مشاوره خرید">مشاوره پیش از خرید گجت</option>
+                    <option value="ثبت سفارش مستقیم">ثبت سفارش کالا</option>
+                    <option value="پیگیری کد رهگیری">پیگیری کد رهگیری پستی</option>
+                    <option value="گارانتی و مهلت تست">استفاده از گارانتی و مهلت تست</option>
+                    <option value="همکاری و خرید عمده">خرید تعداد و سازمانی</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-message" class="block text-xs font-semibold text-text-primary mb-1.5">توضیحات و متن پیام</label>
+                <textarea id="form-message" required rows="4" placeholder="نام محصول مورد نظر یا درخواست خود را بنویسید..." class="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-border-hairline text-sm text-text-primary focus:bg-white focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
+                <button type="submit" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs sm:text-sm font-semibold transition-all shadow-sm flex items-center justify-center gap-2 active:scale-95">
+                  <svg class="w-4 h-4 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>ثبت پیام</span>
+                </button>
+                <button type="button" onclick="sendViaTelegram()" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-surface-secondary hover:bg-surface-container text-text-primary text-xs sm:text-sm font-semibold border border-border-hairline transition-all flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4 fill-current rotate-45 text-primary" viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                  </svg>
+                  <span>ارسال مستقیم فرم در تلگرام</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Info & Working Hours (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-border-hairline shadow-sm">
+              <h3 class="text-lg font-bold text-text-primary mb-4 flex items-center gap-2">
+                <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>ساعات کاری و پاسخگویی</span>
+              </h3>
+              <ul class="space-y-3 text-xs sm:text-sm text-text-secondary">
+                <li class="flex justify-between border-b border-border-hairline pb-2">
+                  <span>پشتیبانی تلگرام:</span>
+                  <span class="font-bold text-text-primary">۲۴ ساعته / ۷ روز هفته</span>
+                </li>
+                <li class="flex justify-between border-b border-border-hairline pb-2">
+                  <span>پاسخگویی تلفنی:</span>
+                  <span class="font-bold text-text-primary">۱۰:۰۰ الی ۲۱:۰۰ (شنبه تا پنجشنبه)</span>
+                </li>
+                <li class="flex justify-between border-b border-border-hairline pb-2">
+                  <span>بسته‌بندی و تحویل پست:</span>
+                  <span class="font-bold text-text-primary">همه روزه ساعت ۱۱:۰۰ صبح</span>
+                </li>
+                <li class="flex justify-between pt-1">
+                  <span>پیگیری کد رهگیری:</span>
+                  <span class="font-bold text-text-primary">عصر روز ارسال در تلگرام</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-primary/5 rounded-3xl p-6 sm:p-8 border border-primary/15">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs">!</span>
+                <h4 class="font-bold text-base text-primary">نکته مهم در هنگام سفارش</h4>
+              </div>
+              <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">
+                تمامی سفارشات پس از تایید موجودی توسط ادمین در تلگرام ثبت قطعی می‌شوند و پیش‌فاکتور رسمی ارسال خواهد شد. حتماً پیش از هرگونه واریز، تاییدیه پشتیبان رسمی @MuzanAkuma را دریافت کنید.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (ACCORDION) -->
+    <section class="w-full py-20 bg-surface-canvas">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14">
+          <span class="text-xs sm:text-sm font-bold text-primary tracking-wider uppercase block mb-2">پرسش‌های پرتکرار</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-text-primary mb-3">سوالات متداول خریداران</h2>
+          <p class="text-sm text-text-secondary">پاسخ به سوالاتی که ممکن است قبل از ثبت سفارش داشته باشید</p>
+        </div>
+
+        <div class="space-y-4" id="faq-accordion">
+          <!-- FAQ Item 1 -->
+          <div class="border border-border-hairline rounded-2xl overflow-hidden bg-surface-subtle transition-all">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-right flex items-center justify-between font-bold text-sm sm:text-base text-text-primary hover:text-primary transition-colors">
+              <span>چطور می‌توانم سفارشم را در فورزا تک ثبت کنم؟</span>
+              <svg class="w-5 h-5 transform transition-transform duration-200 text-text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="hidden px-5 pb-5 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border-hairline/60 pt-3">
+              کافی است روی دکمه «سفارش در تلگرام» هر محصول کلیک کنید یا به آیدی تلگرام @MuzanAkuma پیام دهید. کارشناس ما موجودی، رنگ‌بندی و آدرس شما را دریافت کرده و سفارش را نهایی می‌کند.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="border border-border-hairline rounded-2xl overflow-hidden bg-surface-subtle transition-all">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-right flex items-center justify-between font-bold text-sm sm:text-base text-text-primary hover:text-primary transition-colors">
+              <span>زمان و نحوه ارسال سفارشات چگونه است؟</span>
+              <svg class="w-5 h-5 transform transition-transform duration-200 text-text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="hidden px-5 pb-5 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border-hairline/60 pt-3">
+              سفارش‌های تهران از طریق پیک اکسپرس (تحویل ۲ تا ۴ ساعته) و سفارش‌های سایر استان‌ها با پست پیشتاز یا تیپاکس ارسال می‌شوند که معمولاً طی ۲۴ الی ۴۸ ساعت کاری به مقصد می‌رسند.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="border border-border-hairline rounded-2xl overflow-hidden bg-surface-subtle transition-all">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-right flex items-center justify-between font-bold text-sm sm:text-base text-text-primary hover:text-primary transition-colors">
+              <span>آیا کالاها مهلت تست دارند؟</span>
+              <svg class="w-5 h-5 transform transition-transform duration-200 text-text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="hidden px-5 pb-5 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border-hairline/60 pt-3">
+              بله، تمامی گجت‌ها دارای ۴۸ ساعت مهلت تست فنی از زمان تحویل هستند. در صورت بروز هرگونه مشکل عملکردی یا نقض اصالت، کالا بدون قید و شرط تعویض یا مرجوع خواهد شد.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border border-border-hairline rounded-2xl overflow-hidden bg-surface-subtle transition-all">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-right flex items-center justify-between font-bold text-sm sm:text-base text-text-primary hover:text-primary transition-colors">
+              <span>چگونه بسته خود را رهگیری کنم؟</span>
+              <svg class="w-5 h-5 transform transition-transform duration-200 text-text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="hidden px-5 pb-5 text-xs sm:text-sm text-text-secondary leading-relaxed border-t border-border-hairline/60 pt-3">
+              بلافاصله پس از تحویل مرسوله به اداره پست، کد رهگیری ۲۴ رقمی به همراه لینک استعلام لحظه‌ای در تلگرام برای شما ارسال خواهد شد.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-secondary border-t border-border-hairline">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Col 1 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect>
+              <line x1="8" x2="16" y1="21" y2="21"></line>
+              <line x1="12" x2="12" y1="17" y2="21"></line>
+            </svg>
+            <span>محصولات فورزا تک</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-text-secondary">
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=headphones">هدفون و هندزفری بلوتوثی</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=chargers">شارژرهای نسل پنجم GaN</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=smartwatches">ساعت و مچ‌بندهای هوشمند</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=powerbanks">پاوربانک‌های سفری فست شارژ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <span>دسترسی سریع</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-text-secondary">
+            <li><a class="hover:text-primary transition-colors" href="index.html">صفحه اصلی</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html">کاتالوگ کامل محصولات</a></li>
+            <li><a class="hover:text-primary transition-colors" href="about.html">درباره فورزا تک</a></li>
+            <li><a class="hover:text-primary transition-colors font-bold text-primary" href="contact.html">ارتباط و تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>پشتیبانی و تلگرام</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-text-secondary mb-3 leading-relaxed">
+            مشاوره خرید، پیگیری سفارشات و استعلام موجودی لحظه‌ای:
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent-link-hover text-xs sm:text-sm" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+            </svg>
+            <span>ارتباط با پشتیبان @MuzanAkuma</span>
+          </a>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>درباره برند</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">
+            فورزا تک ارائه‌دهنده گجت‌های هوشمند مینیمال و کالاهای اورجینال دیجیتال است تا تجربه استفاده از فناوری را با بالاترین کیفیت در دسترس شما قرار دهد.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-border-hairline flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-secondary">
+        <p class="text-center sm:text-right">
+          تمامی حقوق محفوظ است © فورزا تک ۱۴۰۳ - طراحی و استانداردسازی برای وب فارسی
+        </p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-text-primary transition-colors" href="about.html">حریم خصوصی</a>
+          <span>•</span>
+          <a class="hover:text-text-primary transition-colors" href="about.html">شرایط خدمات</a>
+          <span>•</span>
+          <a class="hover:text-primary transition-colors" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">پشتیبانی تلگرام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="fixed inset-0 z-50 hidden flex items-start justify-center pt-20 px-4">
+    <div id="search-modal-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity"></div>
+    <div class="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 z-10 animate-subtle-pulse">
+      <div class="p-4 border-b border-gray-100 flex items-center gap-3">
+        <svg class="w-5 h-5 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+        </svg>
+        <input id="search-modal-input" type="text" placeholder="نام محصول، برند یا دسته‌بندی را جستجو کنید..." class="w-full bg-transparent border-0 focus:ring-0 text-sm text-gray-900 placeholder:text-gray-400 outline-none" />
+        <button id="close-search-modal" class="text-xs text-gray-400 hover:text-gray-600 px-2 py-1 rounded bg-gray-100">بستن (ESC)</button>
+      </div>
+      <div id="search-results-container" class="max-h-96 overflow-y-auto p-2"></div>
+    </div>
+  </div>
+
+  <!-- Contact Form & FAQ Script -->
+  <script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('svg');
+      const isHidden = content.classList.contains('hidden');
+
+      // Close all other FAQs
+      document.querySelectorAll('#faq-accordion .border').forEach(item => {
+        const c = item.querySelector('div:last-child');
+        const svg = item.querySelector('button svg');
+        if (c && !c.classList.contains('hidden')) {
+          c.classList.add('hidden');
+        }
+        if (svg) svg.classList.remove('rotate-180');
+      });
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('form-name').value;
+      const contact = document.getElementById('form-contact').value;
+      const subject = document.getElementById('form-subject').value;
+      const message = document.getElementById('form-message').value;
+
+      showToast(`پیام شما با موفقیت ثبت شد، جناب ${name}. به زودی با شما تماس می‌گیریم.`, 'success');
+      e.target.reset();
+    }
+
+    function sendViaTelegram() {
+      const name = document.getElementById('form-name').value || 'ثبت نشده';
+      const contact = document.getElementById('form-contact').value || 'ثبت نشده';
+      const subject = document.getElementById('form-subject').value;
+      const message = document.getElementById('form-message').value || 'درخواست مشاوره و استعلام';
+
+      const text = `سلام، فرم تماس فورزا تک تکمیل شد:\n👤 نام: ${name}\n📞 شماره یا آیدی: ${contact}\n📋 موضوع: ${subject}\n💬 پیام: ${message}`;
+      const url = `https://t.me/MuzanAkuma?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+  <!-- Shared Scripts -->
+  <script src="assets/main.js"></script>
+</body>
+</html>

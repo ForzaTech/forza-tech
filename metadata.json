@@ -1,0 +1,6 @@
+{
+  "name": "فورزا تک | Forza Tech",
+  "description": "فروشگاه تخصصی گجت‌های هوشمند و اکسسوری دیجیتال با طراحی مینیمال و سفارش مستقیم تلگرام",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

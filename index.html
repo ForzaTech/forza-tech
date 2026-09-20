@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>صفحه اصلی | فورزا تک - گجت‌های هوشمند و دیجیتال</title>
+  <meta name="description" content="فروشگاه آنلاین و تخصصی گجت‌های هوشمند و اکسسوری دیجیتال فورزا تک با طراحی مینیمال و سفارش مستقیم از تلگرام." />
+  <meta property="og:title" content="صفحه اصلی | فورزا تک" />
+  <meta property="og:description" content="تکنولوژی، ساده‌تر از همیشه. منتخبی از برترین گجت‌ها و اکسسوری‌های مینیمال دیجیتال." />
+  <meta property="og:type" content="website" />
+  
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN for 0-build and Instant GitHub Pages Deployment -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-canvas": "#FFFFFF",
+            "surface-subtle": "#FBFBFD",
+            "surface-secondary": "#F5F5F7",
+            "surface-container": "#EEEEF2",
+            "text-primary": "#1D1D1F",
+            "text-secondary": "#6E6E73",
+            "primary": "#0071E3",
+            "primary-hover": "#0077ED",
+            "primary-dark": "#0059B5",
+            "primary-container": "#0071E3",
+            "accent-link-hover": "#0077ED",
+            "on-primary": "#FFFFFF",
+            "border-hairline": "rgba(0, 0, 0, 0.08)",
+            "border-hairline-subtle": "rgba(0, 0, 0, 0.04)"
+          },
+          fontFamily: {
+            sans: ['Vazirmatn', 'Tahoma', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body class="bg-surface-canvas font-sans text-text-primary antialiased selection:bg-primary/10 selection:text-primary">
+
+  <!-- HEADER & TOP NAVIGATION -->
+  <header class="sticky top-0 z-50 w-full glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <!-- Right: Logo & Brand Name -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a class="flex items-center gap-3 group" href="index.html">
+          <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-dark to-primary flex items-center justify-center text-white shadow-md transition-transform duration-300 group-hover:scale-105">
+            <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </span>
+          <div class="flex flex-col text-right">
+            <span class="font-black text-lg text-text-primary tracking-tight leading-tight">فورزا تک</span>
+            <span class="text-[11px] text-text-secondary leading-none">تجهیزات دیجیتال هوشمند</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center: Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-bold text-primary nav-link-active pb-1" href="index.html">صفحه اصلی</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="products.html">کاتالوگ محصولات</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="about.html">درباره ما</a>
+        <a class="text-sm font-medium text-text-secondary hover:text-text-primary pb-1 transition-colors" href="contact.html">تماس با ما</a>
+      </nav>
+
+      <!-- Left: Actions (Search + Order Telegram CTA + Mobile Menu Button) -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <button data-open-search aria-label="جستجو در محصولات" class="w-9 h-9 rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:bg-surface-secondary transition-colors" type="button">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary hover:bg-primary-hover text-white text-xs sm:text-sm font-medium transition-all shadow-sm hover:shadow active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+          <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+          <span>ثبت سفارش</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" aria-label="منوی اصلی" class="md:hidden w-9 h-9 rounded-full flex items-center justify-center text-text-secondary hover:bg-surface-secondary">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="mobile-menu-drawer" class="fixed top-0 right-0 bottom-0 w-72 bg-white z-50 shadow-2xl p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div>
+      <div class="flex items-center justify-between mb-8 pb-4 border-b border-border-hairline">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold">F</span>
+          <span class="font-bold text-gray-900">منوی فورزا تک</span>
+        </div>
+        <button id="mobile-menu-close" aria-label="بستن منو" class="w-8 h-8 rounded-full flex items-center justify-center text-gray-500 hover:bg-gray-100">
+          <svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 text-sm font-medium">
+        <a class="text-primary font-bold px-3 py-2 rounded-xl bg-blue-50/70" href="index.html">صفحه اصلی</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="products.html">کاتالوگ محصولات</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="about.html">درباره ما</a>
+        <a class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-xl hover:bg-gray-50" href="contact.html">تماس با ما</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-border-hairline">
+      <a class="w-full py-3 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm" href="https://t.me/MuzanAkuma" target="_blank" rel="noopener noreferrer">
+        <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+        <span>ارتباط با پشتیبان تلگرام</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="w-full">
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="relative w-full pt-16 pb-20 overflow-hidden bg-gradient-to-b from-surface-canvas via-surface-subtle to-surface-canvas border-b border-border-hairline-subtle">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-semibold mb-6 border border-primary/20">
+          <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          <span>نسل جدید گجت‌های هوشمند رونمایی شد</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-text-primary tracking-tight leading-tight sm:leading-snug mb-4 max-w-3xl">
+          تکنولوژی، ساده‌تر از همیشه
+        </h1>
+        <p class="text-base sm:text-xl text-text-secondary max-w-2xl leading-relaxed mb-8">
+          منتخبی از برترین گجت‌ها و اکسسوری‌های مینیمال دیجیتال برای تجربه حرفه‌ای زندگی مدرن با اصالت تضمین‌شده
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+          <a class="px-7 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-white text-sm sm:text-base font-semibold transition-all shadow-md hover:scale-105 flex items-center gap-2" href="products.html">
+            <span>مشاهده محصولات</span>
+            <svg class="w-4 h-4 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a class="px-7 py-3.5 rounded-full bg-surface-secondary hover:bg-surface-container text-text-primary text-sm sm:text-base font-semibold transition-all border border-border-hairline flex items-center gap-2" href="about.html">
+            <span>درباره ما</span>
+            <svg class="w-4 h-4 fill-none stroke-current text-text-secondary" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Hero Dominant Product Showcase -->
+        <div class="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden bg-surface-subtle p-4 sm:p-8 border border-border-hairline shadow-sm hover-lift">
+          <img alt="هدفون پرچمدار فورزا تک" class="w-full h-auto max-h-[480px] object-contain mx-auto transition-transform duration-700 hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5tivhqjIV-8jWjCRDAmQsGTmeUDSdjA2z8qTmd8uYaxKvgXOiVsrTxh5xabHSfm4W1GJIhbxQB02pszo3mIGT_SAIVX0UTUR5VgdG7KooJmUaJTuQlGt-SVoMgx8iOkxeCou3WyLbn0nQeTtF_w2e7Aw-l22HBxnfTID2lwXyxM7zaWI4n3Bz0bjdzYgXsgRhzcSJZNjwp2QPMnVXbSj5HZBUS2vf9XFhjDPum1sd1ExlfE_4xGdH"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PRO EARBUDS & GAN TECHNOLOGY HIGHLIGHT -->
+    <section class="w-full bg-surface-secondary py-20 border-b border-border-hairline">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Part A: Wireless Earbuds Focus -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs sm:text-sm font-bold text-primary tracking-wider uppercase block mb-2">طراحی مهندسی‌شده و مدرن</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-text-primary mb-3">صدایی که همراهت می‌ماند</h2>
+          <p class="text-sm sm:text-base text-text-secondary leading-relaxed">سبک، شفاف و ساخته شده برای تمام روز با درایورهای تیتانیومی داینامیک و نویزکنسلینگ فعال</p>
+        </div>
+        <div class="w-full max-w-4xl mx-auto mb-20 bg-white rounded-3xl p-6 sm:p-10 border border-border-hairline shadow-sm flex flex-col items-center hover-lift">
+          <img alt="ایربادز پیشرفته فورزا تک" class="w-full max-h-[400px] object-contain mb-6 transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZeGD2Ry6ahoJZfZsPnU2bi6BjQd_GbSo7zewj6p1zwQXudPiU8iHnoRqVyd72Z2jYJZVhJz3G4w5Gm7MRFyNJtkgfc0zt712KZz34YuXZ06XmR3QqzPpOzSIEKorhnQi86z9KX3zZ1lUqYjug8Mt794LRa47GR4IT4JVLX7ZMl1KP8cM2bOPs6MFBy8mKhmYZcbeguChobCyr5AFym1dWguc8uehJ7bfS-7ktp5U20yeO7SnlzTIa"/>
+          <a class="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent-link-hover text-sm" href="products.html?category=headphones">
+            <span>مشاهده جزئیات و مشخصات فنی ایربادز</span>
+            <svg class="w-4 h-4 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Part B: GaN Fast Charger Balanced Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-10 border border-border-hairline hover-lift">
+          <div class="lg:col-span-6 flex flex-col items-start text-right">
+            <span class="inline-block px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold mb-3">فناوری GaN نسل پنجم</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-text-primary mb-3">قدرت، وقتی بهش نیاز داری</h3>
+            <p class="text-sm sm:text-base text-text-secondary leading-relaxed mb-6">
+              شارژ سریع برای ریتم پرسرعت زندگی امروز. بازدهی فوق‌العاده با معماری نوین نیترید گالیوم بدون هیچ‌گونه افت توان یا ایجاد حرارت اضافی برای شارژ همزمان گوشی و لپ‌تاپ.
+            </p>
+            <div class="grid grid-cols-2 gap-4 w-full mb-8 pt-4 border-t border-border-hairline">
+              <div class="text-right">
+                <span class="text-2xl font-black text-text-primary block">۶۵ وات</span>
+                <span class="text-xs text-text-secondary">خروجی پایدار توربو شارژ</span>
+              </div>
+              <div class="text-right border-r border-border-hairline pr-4">
+                <span class="text-2xl font-black text-text-primary block">۳۰ دقیقه</span>
+                <span class="text-xs text-text-secondary">تا ۸۰٪ ظرفیت باتری</span>
+              </div>
+            </div>
+            <a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-primary-hover text-white text-sm font-semibold transition-all shadow-sm active:scale-95" href="products.html?category=chargers">
+              <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+              </svg>
+              <span>مشاهده و سفارش آداپتور</span>
+            </a>
+          </div>
+          <div class="lg:col-span-6 flex justify-center">
+            <div class="w-full max-w-md aspect-square rounded-2xl bg-surface-subtle p-6 flex items-center justify-center border border-border-hairline">
+              <img alt="شارژر GaN و کابل" class="w-full h-full object-contain hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxr1kCZ2DFspm-lmtE1Lvxi9ZeYfb4Aja1Jmcp7BZV-LLrk_MP_chYzS2JBia8fOEArehWJ7rn5zPUZ20kBMHJCgAuol_jzQg4TUs3avAznJ8AJfLYZy-h_eN7glMqlNvEGHv7BOzFOo1zVuTF3qov0xmBtBZ08fSSGTaB2aHHTV24u_UlWgyH8cXGXa0b-sek3W5QSCgH22k7t-qt9EJwkhgXbpeIUsGizf0EUVNDO2oHxSjQT2jH"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CORE CATEGORIES (4 Clean Bento Cards) -->
+    <section class="w-full bg-surface-canvas py-20 border-b border-border-hairline">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs sm:text-sm font-bold text-primary tracking-wider uppercase block mb-2">دسته‌بندی‌های برتر</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-text-primary mb-3">اکوسیستم دیوایس‌های فورزا تک</h2>
+          <p class="text-sm sm:text-base text-text-secondary">محصولات متناسب با سبک کاری و روزمره شما با ضمانت تعویض و بالاترین راندمان</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Cat 1: هدفون و هندزفری -->
+          <div class="rounded-3xl bg-surface-secondary/60 border border-border-hairline p-6 sm:p-8 flex flex-col justify-between hover-lift">
+            <div>
+              <span class="text-xs font-bold text-primary uppercase block mb-1">آکوستیک پرچمدار</span>
+              <h3 class="text-xl font-bold text-text-primary mb-2">هدفون و هندزفری</h3>
+              <p class="text-sm text-text-secondary leading-relaxed mb-4">صدای فراگیر استودیویی با حذف نویز پیشرفته فعال و درایورهای سفارشی تیتانیومی.</p>
+              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-primary hover:text-accent-link-hover" href="products.html?category=headphones">
+                <span>مشاهده مدل‌ها</span>
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="h-56 mt-4 flex items-center justify-center">
+              <img alt="هدفون و هندزفری" class="max-h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcncs1CSWL9Ac62iaV_7lBjHFdOh8yhvGvXynBYDm09MQf7uYohNb0HiALarPPAjU9JRJLSI3rZqNjUnkGEN9JerVMXkEFNTrZEopZfnvDowW8L6XMiiYgJvyE9K2Vwy6CXl-N4VLEuwgIqDAjjZoFdnIgmrBm2H8USmM3mkui9IMFHReLpgcbCpbDw3EfxPQ1hPO0rzqqdQjO_H32YvnCensd0mMXe_0rsI0mM1vxJpCnvFM6OLLS"/>
+            </div>
+          </div>
+
+          <!-- Cat 2: شارژر و کابل -->
+          <div class="rounded-3xl bg-surface-secondary/60 border border-border-hairline p-6 sm:p-8 flex flex-col justify-between hover-lift">
+            <div>
+              <span class="text-xs font-bold text-primary uppercase block mb-1">پاور و سرعت</span>
+              <h3 class="text-xl font-bold text-text-primary mb-2">شارژر و کابل</h3>
+              <p class="text-sm text-text-secondary leading-relaxed mb-4">سرعت خارق‌العاده، بدون داغ شدن با تراشه‌های هوشمند مدیریت هوشمند ولتاژ.</p>
+              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-primary hover:text-accent-link-hover" href="products.html?category=chargers">
+                <span>مشاهده مدل‌ها</span>
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="h-56 mt-4 flex items-center justify-center">
+              <img alt="شارژر و کابل" class="max-h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5rlMxoLLXgQ0mVkAbxmONTD-WoPR6YfOgjVSoHbBDskVMtMQnvzO3tqdkaIucJMuz6pwwPKMce_jT3qOTNzhrGtVoJartB6TfsVrWdmQltl4itCS0XorRYOhgb_r5NX4QwsG5IiIbG_s63UKYgv7Ia13cqi4zGNGp_t5dKETFm7cJ0ntGqGgguRRNC7aQWw3-xdEISSbH10kgmedTTyrgrSs7Y_P7P423TAAmm9vdoJpMNXwnENTK"/>
+            </div>
+          </div>
+
+          <!-- Cat 3: پاوربانک -->
+          <div class="rounded-3xl bg-surface-secondary/60 border border-border-hairline p-6 sm:p-8 flex flex-col justify-between hover-lift">
+            <div>
+              <span class="text-xs font-bold text-primary uppercase block mb-1">ظرفیت بی‌پایان</span>
+              <h3 class="text-xl font-bold text-text-primary mb-2">پاوربانک</h3>
+              <p class="text-sm text-text-secondary leading-relaxed mb-4">انرژی مداوم برای تمام روزهای پرمشغله در ابعادی فوق‌العاده باریک و سبک.</p>
+              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-primary hover:text-accent-link-hover" href="products.html?category=powerbanks">
+                <span>مشاهده مدل‌ها</span>
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="h-56 mt-4 flex items-center justify-center">
+              <img alt="پاوربانک" class="max-h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm0e4YXF67qCt3Cmbkwe5IFZtbSGXZv3fRB9Utqzf9TVuYTDNfNIajThmmL7OPN9TcAn1LrheNtERImi9ssmhkzHPoZFkqUsA3nWonXz2GEXVVhMMY31i8oTMBOidqow0tJlQ_QedF51laCaJjp2B41tE-JC8TnxIEZXNzeNq4C6S_4DhG5BFUQW1078xk_HOi04CVn4rNGcigTFrGY0qXk0w4_YmA_hrUmIyTI9IpH8UxJ3F7xzov"/>
+            </div>
+          </div>
+
+          <!-- Cat 4: ساعت هوشمند -->
+          <div class="rounded-3xl bg-surface-secondary/60 border border-border-hairline p-6 sm:p-8 flex flex-col justify-between hover-lift">
+            <div>
+              <span class="text-xs font-bold text-primary uppercase block mb-1">اکوسیستم تندرستی</span>
+              <h3 class="text-xl font-bold text-text-primary mb-2">ساعت هوشمند</h3>
+              <p class="text-sm text-text-secondary leading-relaxed mb-4">سلامت و زندگی هوشمند روی مچ دست شما با حسگرهای بیومتریک و پایش دقیق فعالیت‌ها.</p>
+              <a class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-primary hover:text-accent-link-hover" href="products.html?category=smartwatches">
+                <span>مشاهده مدل‌ها</span>
+                <svg class="w-3.5 h-3.5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="h-56 mt-4 flex items-center justify-center">
+              <img alt="ساعت هوشمند" class="max-h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUsFVA2XNYFZMBdMfWOdZQUOmNOchsX22gh7x0m0EaC_9o8lFYYR-33Y6qq15yLi5cTptzWkRkLrT0yFx4Bk5CveWRlYTwePgR3JCJn3xA8Cf0QYhgZZB2akWd0AZvNcn2Ck9rxKdAdBm_onsQzgHAIqokba-_PQyUhyLASXbS2WfQMtEb5_IpybAFmF-aSL0qwWzSBkfGTLmI7RAJWYnpk_CI1A72EN0_EtydWHOn7x8ev0TgkvUU"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: POPULAR BESTSELLER PRODUCTS -->
+    <section class="w-full bg-surface-canvas py-20 border-b border-border-hairline" id="popular-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs sm:text-sm font-bold text-primary tracking-wider uppercase block mb-2">انتخاب کاربران</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-text-primary mb-3">محبوب‌ترین‌های فورزا تک</h2>
+          <p class="text-sm sm:text-base text-text-secondary">پرفروش‌ترین و تحسین‌شده‌ترین ابزارهای دیجیتال با تست سلامت فیزیکی و ارسال سریع</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Product 1 -->
+          <div class="bg-white rounded-2xl border border-border-hairline p-5 flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-full aspect-square rounded-xl bg-surface-secondary mb-4 p-4 flex items-center justify-center">
+                <img alt="ایربادز NovaPods X2" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1XElPZYaNN95X8qRQVv5MBVeDvvY3AvVNCf1cl4yhmG9gdyMGQMWuUozlz7tj9JZnWRZ-bce7itbyIpSiPHjPts_kV7Fjad9ymDWLcwvjWGZ90DhNIjHzdWOAI8Ql-J05QenjF5PzS_pWDBeZgUOLzfmX2Uc-oNddv3eONVFOWeim7X5UVjTS0SqmQk-At4wa9IrugzjpUneZgAzvx8a92rrntmfYwCdti6caOsl813RzkBpCBURM"/>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-base text-text-primary">NovaPods X2</h4>
+                <span class="text-[11px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">جدید</span>
+              </div>
+              <p class="text-xs text-text-secondary line-clamp-1 mb-4">کیفیت صدای Hi-Res و نویزکنسلینگ هوشمند</p>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between mb-4 pt-3 border-t border-border-hairline">
+                <span class="text-xs text-text-secondary">قیمت:</span>
+                <span class="text-base font-bold text-text-primary">۲,۸۹۰,۰۰۰ <span class="text-xs font-normal text-text-secondary">تومان</span></span>
+              </div>
+              <a class="w-full py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-medium flex items-center justify-center gap-2 transition-all active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+                <svg class="w-3.5 h-3.5 fill-current rotate-45" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+                <span>سفارش در تلگرام</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white rounded-2xl border border-border-hairline p-5 flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-full aspect-square rounded-xl bg-surface-secondary mb-4 p-4 flex items-center justify-center">
+                <img alt="هدفون Sonic Pro" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgXPj4us7N5SbClEwslTerIxiK0LlOkin4v5UbDL9kThXXAvsMoSzdtlQ3TzQgYqjUhVPVHTw6lwT5gKp-xEusskIA8Ne2yRZTuD5WluLcq1IWqnSB7DJpkSy6e8TwPbSydCUGBVb3hKljcq36hJxUdhitiqizT87pIoKsAyR0uW14fQG4YXeGCsw6bsLNYl1GpN_UDTa65HWOzXwQd3Tb3a-paiMTnbWkbd3j8ecA46lSLgq19xdG"/>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-base text-text-primary">Sonic Pro</h4>
+                <span class="text-[11px] px-2 py-0.5 rounded-full bg-surface-container text-text-secondary font-medium">استودیویی</span>
+              </div>
+              <p class="text-xs text-text-secondary line-clamp-1 mb-4">تفکیک صدای حرفه‌ای با ۴۵ ساعت دوام باتری</p>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between mb-4 pt-3 border-t border-border-hairline">
+                <span class="text-xs text-text-secondary">قیمت:</span>
+                <span class="text-base font-bold text-text-primary">۴,۷۵۰,۰۰۰ <span class="text-xs font-normal text-text-secondary">تومان</span></span>
+              </div>
+              <a class="w-full py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-medium flex items-center justify-center gap-2 transition-all active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+                <svg class="w-3.5 h-3.5 fill-current rotate-45" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+                <span>سفارش در تلگرام</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-white rounded-2xl border border-border-hairline p-5 flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-full aspect-square rounded-xl bg-surface-secondary mb-4 p-4 flex items-center justify-center">
+                <img alt="پاوربانک Volt 20K" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvIE0JDioc_tZTly-3njKd1ay1Q2hGvBQ8EIcd7-AralRAm-U4rCI1E1wvH1FtFNPVmr7I40g1qVH-vPKRo143pov8LdAPIIVCSe8ShNvk-n6w0Ys5KTQLScKScn2sl6OipBy-K9qYc17uIKiEtRv-fLfDCeRSpUMIBXqn7EntT8SCFWvvv8UD6sWgTiFOy5hQI8VP0MomiQalGY16h55avUdTA_J5B_1B2QDjmA2A-w9cTTX695Na"/>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-base text-text-primary">Volt 20K</h4>
+                <span class="text-[11px] px-2 py-0.5 rounded-full bg-surface-container text-text-secondary font-medium">سفری</span>
+              </div>
+              <p class="text-xs text-text-secondary line-clamp-1 mb-4">ظرفیت ۲۰۰۰۰ میلی‌آمپر با خروجی دوبل فست PD</p>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between mb-4 pt-3 border-t border-border-hairline">
+                <span class="text-xs text-text-secondary">قیمت:</span>
+                <span class="text-base font-bold text-text-primary">۲,۱۵۰,۰۰۰ <span class="text-xs font-normal text-text-secondary">تومان</span></span>
+              </div>
+              <a class="w-full py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-medium flex items-center justify-center gap-2 transition-all active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+                <svg class="w-3.5 h-3.5 fill-current rotate-45" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+                <span>سفارش در تلگرام</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="bg-white rounded-2xl border border-border-hairline p-5 flex flex-col justify-between hover-lift">
+            <div>
+              <div class="w-full aspect-square rounded-xl bg-surface-secondary mb-4 p-4 flex items-center justify-center">
+                <img alt="شارژر GaN 65W" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5rlMxoLLXgQ0mVkAbxmONTD-WoPR6YfOgjVSoHbBDskVMtMQnvzO3tqdkaIucJMuz6pwwPKMce_jT3qOTNzhrGtVoJartB6TfsVrWdmQltl4itCS0XorRYOhgb_r5NX4QwsG5IiIbG_s63UKYgv7Ia13cqi4zGNGp_t5dKETFm7cJ0ntGqGgguRRNC7aQWw3-xdEISSbH10kgmedTTyrgrSs7Y_P7P423TAAmm9vdoJpMNXwnENTK"/>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-base text-text-primary">GaN 65W Turbo</h4>
+                <span class="text-[11px] px-2 py-0.5 rounded-full bg-orange-100 text-orange-800 font-medium">پرتوان</span>
+              </div>
+              <p class="text-xs text-text-secondary line-clamp-1 mb-4">سه پورت همزمان سازگار با لپ‌تاپ و گوشی</p>
+            </div>
+            <div>
+              <div class="flex items-baseline justify-between mb-4 pt-3 border-t border-border-hairline">
+                <span class="text-xs text-text-secondary">قیمت:</span>
+                <span class="text-base font-bold text-text-primary">۲,۴۹۰,۰۰۰ <span class="text-xs font-normal text-text-secondary">تومان</span></span>
+              </div>
+              <a class="w-full py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-medium flex items-center justify-center gap-2 transition-all active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+                <svg class="w-3.5 h-3.5 fill-current rotate-45" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+                <span>سفارش در تلگرام</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: VALUE PROPOSITIONS (Pure Inline SVG Icons) -->
+    <section class="w-full bg-surface-secondary/50 py-16 border-b border-border-hairline">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="flex flex-col items-center text-center p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-primary mb-4 border border-border-hairline shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-base text-text-primary mb-1">انتخاب مطمئن</h4>
+            <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">اصالت ۱۰۰٪ تمامی قطعات با تست سلامت فیزیکی پیش از تحویل</p>
+          </div>
+
+          <div class="flex flex-col items-center text-center p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-primary mb-4 border border-border-hairline shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <rect height="13" rx="2" width="15" x="1" y="3"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h4 class="font-bold text-base text-text-primary mb-1">ارسال سریع و اکسپرس</h4>
+            <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">بسته‌بندی ضربه‌گیر ایمن و تحویل مطمئن به سراسر نقاط کشور</p>
+          </div>
+
+          <div class="flex flex-col items-center text-center p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-primary mb-4 border border-border-hairline shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-base text-text-primary mb-1">پشتیبانی تلگرام</h4>
+            <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">مشاوره فنی و پاسخگویی برخط ۲۴ ساعته در تمام روزهای هفته</p>
+          </div>
+
+          <div class="flex flex-col items-center text-center p-4">
+            <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-primary mb-4 border border-border-hairline shadow-sm">
+              <svg class="w-7 h-7 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h4 class="font-bold text-base text-text-primary mb-1">خرید بی‌واسطه و آسان</h4>
+            <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">بدون نیاز به ثبت‌نام‌های طولانی؛ ثبت سفارش مستقیم در تلگرام</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: TELEGRAM CALL TO ACTION -->
+    <section class="w-full bg-surface-canvas py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+        <div class="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-6 shadow-md animate-subtle-pulse">
+          <svg class="w-8 h-8 fill-current rotate-45" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-text-primary mb-3">برای ثبت سفارشت آماده‌ای؟</h2>
+        <p class="text-sm sm:text-base text-text-secondary max-w-xl leading-relaxed mb-8">
+          محصول مورد نظرت رو انتخاب کن و سفارشت رو مستقیم در تلگرام فورزا تک ثبت کن؛ تیم پشتیبانی ما در کمترین زمان پردازش را آغاز می‌کند.
+        </p>
+        <a class="px-8 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-white text-sm sm:text-base font-semibold shadow-md hover:scale-105 transition-all flex items-center gap-2.5 active:scale-95" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+          <svg class="w-5 h-5 fill-current rotate-45" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+          <span>ورود به تلگرام و ثبت سفارش آنلاین</span>
+        </a>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-text-secondary">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>پاسخگویی سریع کمتر از ۱۰ دقیقه</span>
+          </span>
+          <span>•</span>
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>تضمین اصالت کالا و مهلت تست</span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-secondary border-t border-border-hairline" id="footer-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Col 1 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect>
+              <line x1="8" x2="16" y1="21" y2="21"></line>
+              <line x1="12" x2="12" y1="17" y2="21"></line>
+            </svg>
+            <span>محصولات فورزا تک</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-text-secondary">
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=headphones">هدفون و هندزفری بلوتوثی</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=chargers">شارژرهای نسل پنجم GaN</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=smartwatches">ساعت و مچ‌بندهای هوشمند</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html?category=powerbanks">پاوربانک‌های سفری فست شارژ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <span>دسترسی سریع</span>
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-text-secondary">
+            <li><a class="hover:text-primary transition-colors" href="index.html">صفحه اصلی</a></li>
+            <li><a class="hover:text-primary transition-colors" href="products.html">کاتالوگ کامل محصولات</a></li>
+            <li><a class="hover:text-primary transition-colors" href="about.html">درباره فورزا تک</a></li>
+            <li><a class="hover:text-primary transition-colors" href="contact.html">ارتباط و تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>پشتیبانی و تلگرام</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-text-secondary mb-3 leading-relaxed">
+            مشاوره خرید، پیگیری سفارشات و استعلام موجودی لحظه‌ای:
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent-link-hover text-xs sm:text-sm" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current rotate-45" viewBox="0 0 24 24">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+            </svg>
+            <span>ارتباط با پشتیبان @MuzanAkuma</span>
+          </a>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="font-bold text-base text-text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>درباره برند</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-text-secondary leading-relaxed">
+            فورزا تک ارائه‌دهنده گجت‌های هوشمند مینیمال و کالاهای اورجینال دیجیتال است تا تجربه استفاده از فناوری را با بالاترین کیفیت در دسترس شما قرار دهد.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-border-hairline flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-secondary">
+        <p class="text-center sm:text-right">
+          تمامی حقوق محفوظ است © فورزا تک ۱۴۰۳ - طراحی و استانداردسازی برای وب فارسی
+        </p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-text-primary transition-colors" href="about.html">حریم خصوصی</a>
+          <span>•</span>
+          <a class="hover:text-text-primary transition-colors" href="about.html">شرایط خدمات</a>
+          <span>•</span>
+          <a class="hover:text-primary transition-colors" href="https://t.me/MuzanAkuma" rel="noopener noreferrer" target="_blank">پشتیبانی تلگرام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="fixed inset-0 z-50 hidden flex items-start justify-center pt-20 px-4">
+    <div id="search-modal-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity"></div>
+    <div class="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 z-10 animate-subtle-pulse">
+      <div class="p-4 border-b border-gray-100 flex items-center gap-3">
+        <svg class="w-5 h-5 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+        </svg>
+        <input id="search-modal-input" type="text" placeholder="نام محصول، برند یا دسته‌بندی را جستجو کنید..." class="w-full bg-transparent border-0 focus:ring-0 text-sm text-gray-900 placeholder:text-gray-400 outline-none" />
+        <button id="close-search-modal" class="text-xs text-gray-400 hover:text-gray-600 px-2 py-1 rounded bg-gray-100">بستن (ESC)</button>
+      </div>
+      <div id="search-results-container" class="max-h-96 overflow-y-auto p-2"></div>
+    </div>
+  </div>
+
+  <!-- Shared Scripts -->
+  <script src="assets/main.js"></script>
+</body>
+</html>
